@@ -9,6 +9,6 @@
 <h3>Features and Description</h3>
 <p>The Todo-App's features include:</p>
 <p>
-<h4>Adding Tasks</h4>&nbsp<h4>v1.0</h4>
+<h4>Adding Tasks</h4><h4>v1.0</h4>
 
 <h4>Task available after refresh or close the Browser which stored in local storage. </h4>
