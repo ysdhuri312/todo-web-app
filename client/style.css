@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font: Poppins;
     font-family: "Poppins", sans-serif;
+    text-decoration:none;
 }
 
 .container{
@@ -106,4 +107,38 @@ ul li span{
 ul li span:hover{
     background-color: #edeef0;
     border-radius: 50%;
+}
+
+/* Login page CSS*/
+
+.todo-login{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 30px 30px 40px;
+    border-radius: 10px;
+}
+
+.todo-input{
+    width: 100%;
+    margin: 5px;
+    padding: 20px;
+    background: #edeef0;
+    border-radius: 10px;
+}
+
+.btn-form{
+    margin-top:15px;
+}
+
+.btn-href{
+        border: none;
+    outline: none;
+    padding: 16px 50px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #ff5945;
 }
