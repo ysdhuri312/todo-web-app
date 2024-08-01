@@ -8,11 +8,11 @@
 </head>
 <body>
     <div class="container">
-        <form action="/login" method="post" class="todo-login">
+        <form action="http://localhost:3000/api/v1/users/login" method="post" class="todo-login">
             <div class="">
-                <input type="text" placeholder="Enter the Email" class="todo-input" />
+                <input type="text" placeholder="Enter the Email" class="todo-input" name="email" />
                 <br>
-                <input type="password" Placeholder="Enter the Password" class="todo-input" />
+                <input type="password" Placeholder="Enter the Password" class="todo-input" name="password" />
             </div>
             <div class="btn-form">
                 <button type="submit">Log in</button>

@@ -7,7 +7,7 @@ exports.register = async (req, res, next) => {
 
     try {
         const { name, email, password } = req.body;
-
+        console.log(name, email, password)
         if (!email || !password || !name) {
             return res.json({
                 success: false,
@@ -50,7 +50,7 @@ exports.login = async (req, res, next) => {
         if (!user) {
             return res.status(401).json({
                 success: false,
-                message: "Please enter correct email and password"
+                message: "Please enter correct email and password",
             })
         }
 
@@ -63,7 +63,8 @@ exports.login = async (req, res, next) => {
 
             return res.cookie('_token', token).status(200).json({
                 success: true,
-                message: "Login Successfully"
+                message: "Login Successfully",
+                user
             })
         }
 
