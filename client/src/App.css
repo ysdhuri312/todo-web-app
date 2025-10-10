@@ -1,0 +1,38 @@
+/**** header ****/
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #343434;
+    color: white
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.logo img {
+    height: 30px;
+}
+
+.logo span {
+    letter-spacing: 2px;
+}
+
+.navbar a {
+    padding: 20px 10px;
+    color: inherit;
+    padding: auto 0;
+    /* background: blue; */
+}
+
+.navbar a:hover {
+    background-color: #1B1B1B;
+    color: inherit;
+}
