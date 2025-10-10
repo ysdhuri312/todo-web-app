@@ -15,6 +15,12 @@ The Todo-App is a task managing Web-Application to help its users to stay organi
 - Adding tasks
 - After completed then checked
 - Delete task
-- After refresh task cannot delete
+- After refresh tasks cannot delete
 
-### v1.0
+## Usage
+
+To use this app, Open index.html file in live server.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
