@@ -7,14 +7,8 @@ const Signup = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const submitHandler = (e, action) => {
+  const submitHandler = (e) => {
     e.preventDefault();
-
-    if (action === 'signup') {
-      console.log(name, email, password);
-    } else {
-      console.log('signin');
-    }
 
     setName('');
     setEmail('');
@@ -24,7 +18,7 @@ const Signup = () => {
   return (
     <div className='form-container'>
       <h1>Sign up</h1>
-      <form className='signup'>
+      <form className='auth-form' onSubmit={submitHandler}>
         <input
           type='text'
           value={name}
@@ -52,10 +46,8 @@ const Signup = () => {
           required
         />
         <br />
-        <button type='submit' onClick={(e) => submitHandler(e, 'signup')}>
-          Sign up
-        </button>
-        <button type='submit' onClick={(e) => submitHandler(e, 'signin')}>
+        <button type='submit'>Sign up</button>
+        <button type='button' onClick={() => console.log('just clicked')}>
           Sign in
         </button>
       </form>
