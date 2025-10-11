@@ -1,4 +1,4 @@
-/**** header ****/
+/***** header *****/
 .header {
     width: 100%;
     display: flex;
@@ -35,4 +35,46 @@
 .navbar a:hover {
     background-color: #1B1B1B;
     color: inherit;
+}
+
+
+/***** Sign Up *****/
+
+.form-container {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container h1 {
+    margin: 20px;
+}
+
+.signup {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 70px;
+}
+
+input {
+    padding: 10px 90px 10px 5px;
+    margin-bottom: 15px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 1px;
+}
+
+.signup button {
+    margin-top: 10px;
+    margin-right: 5px;
+    padding: 7px 23px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 1px;
+    cursor: pointer;
+    transition: transform 0.1s ease, background 0.2s ease;
+}
+
+.signup button:active {
+    transform: scale(0.95);
+    box-shadow: rgba(0, 0, 0, 0) 0px 1px 1px;
 }
