@@ -38,7 +38,7 @@
 }
 
 
-/***** Sign Up *****/
+/***** Sign up and Sign in *****/
 
 .form-container {
     height: 80vh;
@@ -50,9 +50,10 @@
 
 .form-container h1 {
     margin: 20px;
+    color: #343434;
 }
 
-.signup {
+.auth-form {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     padding: 70px;
 }
@@ -64,7 +65,7 @@ input {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 1px;
 }
 
-.signup button {
+.auth-form button {
     margin-top: 10px;
     margin-right: 5px;
     padding: 7px 23px;
@@ -74,7 +75,7 @@ input {
     transition: transform 0.1s ease, background 0.2s ease;
 }
 
-.signup button:active {
+.auth-form button:active {
     transform: scale(0.95);
     box-shadow: rgba(0, 0, 0, 0) 0px 1px 1px;
 }
