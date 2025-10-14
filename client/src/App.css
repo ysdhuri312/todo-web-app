@@ -15,14 +15,16 @@
     display: flex;
     align-items: center;
     gap: 3px;
+    cursor: pointer;
 }
 
-.logo img {
+.logo-img {
     height: 30px;
 }
 
 .logo span {
     letter-spacing: 2px;
+    color: white;
 }
 
 .navbar a {

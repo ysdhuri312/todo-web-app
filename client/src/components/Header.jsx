@@ -2,20 +2,22 @@
 
 import React from 'react';
 import logo from '../assets/images/icon.png';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
     <div className='header'>
       <div className='logo'>
-        <img src={logo} alt='logo' />
-        <span>ToDo</span>
+        <Link to='/'>
+          <img src={logo} alt='logo' className='logo-img' />
+          <span>ToDo</span>
+        </Link>
       </div>
       <nav className='navbar'>
-        <a href='#'>Home</a>
-        <a href='#archives'>Archives</a>
-        <a href='#about'>About</a>
-        <a href='#sign-in'>Sign in</a>
-        <a href='#sign-up'>Sign up</a>
+        <Link to='/'>Home</Link>
+        <Link to='/archives'>Archives</Link>
+        <Link to='/signin'>Sign in</Link>
+        <Link to='/signup'>Sign up</Link>
       </nav>
     </div>
   );
