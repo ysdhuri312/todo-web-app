@@ -1,11 +1,6 @@
 /** @format */
 
 const Todo = ({ todos }) => {
-  if (!Array.isArray(todos) || todos.length === 0) {
-    console.log(todos);
-    return '';
-  }
-
   return (
     <>
       {todos.map((todo, index) => (

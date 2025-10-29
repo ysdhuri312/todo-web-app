@@ -17,7 +17,6 @@ const Home = () => {
       <StatusBar />
       <CreateTodo addTodo={addTodo} />
       <TodoList todos={todos} />
-      {console.log(todos)}
     </div>
   );
 };

@@ -20,12 +20,12 @@ const TodoList = ({ todos }) => {
         <tbody>
           <Todo todos={todos} />
         </tbody>
-        {!Array.isArray(todos) || todos.length === 0 ? (
-          <p>No Todos available</p>
-        ) : (
-          ''
-        )}
       </table>
+      {!Array.isArray(todos) || todos.length === 0 ? (
+        <p>No Todos available</p>
+      ) : (
+        ''
+      )}
     </div>
   );
 };

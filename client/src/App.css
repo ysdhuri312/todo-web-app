@@ -113,21 +113,21 @@ button:active {
 
 .todo-input {
     width: 50%;
-    height: 80%;
+    height: 70%;
     margin-right: 10px;
     margin-bottom: 0;
 }
 
 .datetime {
     width: 20%;
-    height: 80%;
+    height: 70%;
     margin-right: 10px;
     margin-bottom: 0;
     padding: 0 10px;
 }
 
 .todo-btn {
-    height: 80%;
+    height: 70%;
     width: 10%;
     font-weight: 600;
     margin: 0;
@@ -161,4 +161,9 @@ td {
 
 .todo {
     text-align: center;
+}
+
+.todo td button {
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
