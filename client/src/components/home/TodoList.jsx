@@ -3,7 +3,7 @@
 import SearchBar from './SearchBar';
 import Todo from './Todo';
 
-const TodoList = () => {
+const TodoList = ({ todos }) => {
   return (
     <div className='todo-list-container'>
       <SearchBar />
@@ -18,10 +18,13 @@ const TodoList = () => {
           </tr>
         </thead>
         <tbody>
-          <Todo />
-          <Todo />
-          <Todo />
+          <Todo todos={todos} />
         </tbody>
+        {!Array.isArray(todos) || todos.length === 0 ? (
+          <p>No Todos available</p>
+        ) : (
+          ''
+        )}
       </table>
     </div>
   );

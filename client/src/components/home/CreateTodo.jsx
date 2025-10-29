@@ -2,16 +2,23 @@
 
 import { useState } from 'react';
 
-const CreateTodo = () => {
+const CreateTodo = ({ addTodo }) => {
   const [todoInputValue, setTodoInputValue] = useState('');
   const [datetimeValue, setDatetimeValue] = useState('');
 
+  let current_datetime = new Date().toLocaleString();
+  let due_date = new Date(datetimeValue).toLocaleString();
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    console.log(todoInputValue);
-    console.log(datetimeValue);
+    const newTodo = {
+      todoInputValue,
+      due_date,
+      current_datetime,
+      status: 'Ongoing',
+    };
 
+    addTodo(newTodo);
     setTodoInputValue('');
     setDatetimeValue('');
   };
