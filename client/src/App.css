@@ -61,10 +61,11 @@
 }
 
 input {
-    padding: 10px 90px 10px 5px;
+    padding: 0 90px 0 5px;
     margin-bottom: 15px;
     border: none;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 1px;
+    font-size: 15px;
 }
 
 button {
@@ -86,7 +87,7 @@ button:active {
 
 .statusbar {
     width: 100%;
-    height: 100px;
+    height: 85px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 1px;
 }
 
@@ -97,22 +98,57 @@ button:active {
     height: 80px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 1px;
     padding: 10px;
+    padding-bottom: 0;
 }
 
-.todo {
+.todo-input {
     width: 50%;
     height: 80%;
     margin-right: 10px;
+    margin-bottom: 0;
 }
 
 .datetime {
     width: 20%;
     height: 80%;
     margin-right: 10px;
+    margin-bottom: 0;
+    padding: 0 10px;
 }
 
 .todo-btn {
     height: 80%;
-    width: 15%;
+    width: 10%;
     font-weight: 600;
+    margin: 0;
+    margin-right: 10px;
+}
+
+/* List of Todo */
+
+.todo-list-container {
+    width: 100%;
+}
+
+.search-todo {
+    width: 65%;
+}
+
+.todo-list {
+    width: 100%;
+}
+
+th {
+    padding: 10px 0 10px 0;
+}
+
+table,
+th,
+td {
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    border-collapse: collapse;
+}
+
+.todo {
+    text-align: center;
 }
