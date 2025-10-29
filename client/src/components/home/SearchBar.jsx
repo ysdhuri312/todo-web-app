@@ -10,7 +10,7 @@ const SearchBar = () => {
       <form className='todo-container'>
         <input
           className='todo-input search-todo'
-          type='taxt'
+          type='text'
           value={searchInputValue}
           name='todo'
           onChange={(e) => setSearchInputValue(e.target.value)}

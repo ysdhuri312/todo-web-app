@@ -21,7 +21,7 @@ const CreateTodo = () => {
       <form className='todo-container' onSubmit={handleSubmit}>
         <input
           className='todo-input'
-          type='taxt'
+          type='text'
           value={todoInputValue}
           onChange={(e) => setTodoInputValue(e.target.value)}
           name='todo'
