@@ -1,6 +1,6 @@
 /** @format */
 
-import React, { use, useState } from 'react';
+import React, { useState } from 'react';
 import logo from '../assets/images/icon.png';
 import { Link } from 'react-router-dom';
 
