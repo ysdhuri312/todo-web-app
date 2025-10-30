@@ -1,8 +1,8 @@
 /** @format */
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
-const CreateTodo = ({ addTodo }) => {
+const CreateTodo = ({ addTodo, editValue }) => {
   const [todoInputValue, setTodoInputValue] = useState('');
   const [datetimeValue, setDatetimeValue] = useState('');
 
@@ -17,6 +17,7 @@ const CreateTodo = ({ addTodo }) => {
       current_datetime,
       status: 'Ongoing',
     };
+    console.log(editValue);
 
     addTodo(newTodo);
     setTodoInputValue('');
