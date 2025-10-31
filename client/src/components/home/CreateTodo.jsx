@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 
-const CreateTodo = ({ addTodo, editValue }) => {
+const CreateTodo = ({ addTodo }) => {
   const [todoInputValue, setTodoInputValue] = useState('');
   const [datetimeValue, setDatetimeValue] = useState('');
 
@@ -17,7 +17,6 @@ const CreateTodo = ({ addTodo, editValue }) => {
       current_datetime,
       status: 'Ongoing',
     };
-    console.log(editValue);
 
     addTodo(newTodo);
     setTodoInputValue('');
