@@ -1,9 +1,17 @@
 /** @format */
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import SearchBar from './SearchBar';
 
-const TodoList = ({ todos, editTodo }) => {
+const TodoList = ({ todos, onDeleteTodo }) => {
+  const deleteTodo = (index) => {
+    const filteredTodo = todos.filter((val, i) => {
+      return i !== index;
+    });
+    console.log(filteredTodo);
+    onDeleteTodo(filteredTodo);
+  };
+
   return (
     <div className='todo-list-container'>
       <SearchBar />
@@ -27,15 +35,7 @@ const TodoList = ({ todos, editTodo }) => {
                 <td>{due_date}</td>
                 <td>{status}</td>
                 <td>
-                  <button
-                    onClick={(e) => {
-                      e.preventDefault();
-                      editTodo(todo);
-                    }}
-                  >
-                    Edit
-                  </button>
-                  <button>Delete</button>
+                  <button onClick={() => deleteTodo(index)}>Delete</button>
                   <button>Ongoing/ Completed</button>
                 </td>
               </tr>
